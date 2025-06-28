@@ -1,0 +1,71 @@
+/* Reset and layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2d2d2d;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Crewmate body */
+.crewmate {
+  position: relative;
+  width: 120px;
+  height: 180px;
+  background-color: crimson;
+  border-radius: 60px 60px 30px 30px;
+  box-shadow: inset -8px -8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Visor */
+.visor {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 40px;
+  background-color: #a2d9ff;
+  border: 5px solid #fff;
+  border-radius: 20px;
+  box-shadow: inset -4px -4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+/* Backpack */
+.backpack {
+  position: absolute;
+  top: 50px;
+  left: -40px;
+  width: 40px;
+  height: 100px;
+  background-color: crimson;
+  border-radius: 20px;
+  box-shadow: inset -6px -6px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Legs */
+.leg {
+  position: absolute;
+  bottom: -20px;
+  width: 40px;
+  height: 40px;
+  background-color: crimson;
+  border-radius: 10px;
+  box-shadow: inset -5px -5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.left-leg {
+  left: 10px;
+}
+
+.right-leg {
+  right: 10px;
+}
